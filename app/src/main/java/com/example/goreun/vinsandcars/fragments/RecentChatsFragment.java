@@ -26,21 +26,31 @@ public class RecentChatsFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
-        View rootView = inflater.inflate(R.layout.contacts, container, false);
+        View rootView = inflater.inflate(R.layout.resent_chats, container, false);
         //init Component
         contactsListViewSliding = (ListView) rootView.findViewById(R.id.lv_resent_charts);
         listSliding = new ArrayList<>();
 
         //Add item for sliding list
-        listSliding.add(new ItemContactsMenu(R.drawable.ashot, "Ashot Petrosyan"));
+        listSliding.add(new ItemContactsMenu(R.drawable.artur, "Ashot Petrosyan"));
         listSliding.add(new ItemContactsMenu(R.drawable.artur, "Artur Tsghunyan"));
         listSliding.add(new ItemContactsMenu(R.drawable.goreun, "Goreun Berberian"));
-        listSliding.add(new ItemContactsMenu(R.drawable.ashot, "Ashot Petrosyan"));
+        listSliding.add(new ItemContactsMenu(R.drawable.artur, "Ashot Petrosyan"));
         listSliding.add(new ItemContactsMenu(R.drawable.artur, "Artur Tsghunyan"));
         listSliding.add(new ItemContactsMenu(R.drawable.goreun, "Goreun Berberian"));
-        listSliding.add(new ItemContactsMenu(R.drawable.ashot, "Ashot Petrosyan"));
+        listSliding.add(new ItemContactsMenu(R.drawable.artur, "Ashot Petrosyan"));
         listSliding.add(new ItemContactsMenu(R.drawable.artur, "Artur Tsghunyan"));
         listSliding.add(new ItemContactsMenu(R.drawable.goreun, "Goreun Berberian"));
+        listSliding.add(new ItemContactsMenu(R.drawable.artur, "Ashot Petrosyan"));
+        listSliding.add(new ItemContactsMenu(R.drawable.artur, "Artur Tsghunyan"));
+        listSliding.add(new ItemContactsMenu(R.drawable.goreun, "Goreun Berberian"));
+        listSliding.add(new ItemContactsMenu(R.drawable.artur, "Ashot Petrosyan"));
+        listSliding.add(new ItemContactsMenu(R.drawable.artur, "Artur Tsghunyan"));
+        listSliding.add(new ItemContactsMenu(R.drawable.goreun, "Goreun Berberian"));
+        listSliding.add(new ItemContactsMenu(R.drawable.artur, "Ashot Petrosyan"));
+        listSliding.add(new ItemContactsMenu(R.drawable.artur, "Artur Tsghunyan"));
+        listSliding.add(new ItemContactsMenu(R.drawable.goreun, "Goreun Berberian"));
+
 
         adapter = new ContactsSlidingMenuAdapter(container.getContext(), listSliding);
         contactsListViewSliding.setAdapter(adapter);

@@ -33,13 +33,13 @@ public class ContactsFragment extends Fragment {
         listSliding = new ArrayList<>();
 
         //Add item for sliding list
-        listSliding.add(new ItemContactsMenu(R.drawable.ashot, "Ashot Petrosyan"));
+        listSliding.add(new ItemContactsMenu(R.drawable.artur, "Ashot Petrosyan"));
         listSliding.add(new ItemContactsMenu(R.drawable.artur, "Artur Tsghunyan"));
         listSliding.add(new ItemContactsMenu(R.drawable.goreun, "Goreun Berberian"));
-        listSliding.add(new ItemContactsMenu(R.drawable.ashot, "Ashot Petrosyan"));
+        listSliding.add(new ItemContactsMenu(R.drawable.artur, "Ashot Petrosyan"));
         listSliding.add(new ItemContactsMenu(R.drawable.artur, "Artur Tsghunyan"));
         listSliding.add(new ItemContactsMenu(R.drawable.goreun, "Goreun Berberian"));
-        listSliding.add(new ItemContactsMenu(R.drawable.ashot, "Ashot Petrosyan"));
+        listSliding.add(new ItemContactsMenu(R.drawable.artur, "Ashot Petrosyan"));
         listSliding.add(new ItemContactsMenu(R.drawable.artur, "Artur Tsghunyan"));
         listSliding.add(new ItemContactsMenu(R.drawable.goreun, "Goreun Berberian"));
 

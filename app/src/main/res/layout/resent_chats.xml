@@ -17,5 +17,5 @@
         android:background="#ffffff"
         android:choiceMode="singleChoice"
         />
-    ]
+
 </LinearLayout>
