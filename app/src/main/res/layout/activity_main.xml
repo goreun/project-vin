@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main_menu"
+    tools:context="com.example.goreun.vinsandcars.MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        >
+
+        <LinearLayout
+            android:background="@color/topPanelMenu"
+            android:layout_height="80dp"
+            android:layout_width="fill_parent"
+            android:id="@+id/ll_menu">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:id="@+id/recent_chat"
+                android:src="@drawable/recent_chats"
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:id="@+id/contacts"
+                android:src="@drawable/contacts"
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:id="@+id/cars"
+                android:src="@drawable/car"
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:id="@+id/profile"
+                android:src="@drawable/profile"
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:id="@+id/search"
+                android:src="@drawable/search"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="557dp"
+            android:layout_width="fill_parent"
+            android:id="@+id/ll_main"
+            android:orientation="vertical" />
+        </LinearLayout>
+
+</RelativeLayout>
+
+
