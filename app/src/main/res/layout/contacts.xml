@@ -17,8 +17,6 @@
         android:layout_height="match_parent"
         android:id="@+id/lv_contacts_menu"
         android:background="#ffffff"
-        android:choiceMode="singleChoice"
-         />
-
+        android:choiceMode="singleChoice" />
 
 </LinearLayout>

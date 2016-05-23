@@ -1,10 +1,13 @@
 package com.example.goreun.vinsandcars.fragments;
 
 import android.app.Fragment;
+import android.nfc.Tag;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.example.goreun.vinsandcars.R;
@@ -19,7 +22,7 @@ public class ContactsFragment extends Fragment {
     private List<ItemContactsMenu> listSliding;
     private ContactsSlidingMenuAdapter adapter;
     private ListView contactsListViewSliding;
-
+    private static final String TAG = "MyActivity";
 
     public ContactsFragment(){
 
@@ -45,6 +48,14 @@ public class ContactsFragment extends Fragment {
 
         adapter = new ContactsSlidingMenuAdapter(container.getContext(), listSliding);
         contactsListViewSliding.setAdapter(adapter);
+
+        contactsListViewSliding.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                 Log.v(TAG,String.valueOf(position));
+            }
+        });
+
         return rootView;
     }
 }
