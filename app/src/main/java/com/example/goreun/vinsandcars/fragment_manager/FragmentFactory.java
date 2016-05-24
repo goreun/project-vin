@@ -63,7 +63,7 @@ public class FragmentFactory{
 
         switch (fragmentId){
             case 0:
-                fragment =  recentChatsFragment;
+                fragment =  new RecentChatsFragment();
                 break;
             case 1:
                 fragment = contactsFragment;
@@ -78,7 +78,7 @@ public class FragmentFactory{
                 fragment = searchFragment;
                 break;
             default:
-                fragment = mainMenuFragment;
+                fragment = new MainMenuFragment();
                 break;
         }
 

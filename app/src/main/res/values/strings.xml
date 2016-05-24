@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Cars and Vins</string>
+    <string name="send">Send</string>
+    <string name="action_setting">Settings</string>
 </resources>
